@@ -1,0 +1,122 @@
+/* css/style.css */
+@charset "UTF-8";
+
+/* カスタムスタイル */
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif, 'Poppins', sans-serif; /* フォントファミリー設定 */
+  background-color: #f7fafc; /* 非常に薄いグレーの背景色 */
+  color: #4a5568; /* 濃いグレーの文字色 */
+}
+
+/* 見出し */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* 見出しのフォントファミリー設定 */
+  font-weight: 700; /* 見出しのフォントウェイト設定 */
+}
+
+/* セクション見出し */
+.section-heading {
+  position: relative; /* 相対配置の基準 */
+  display: inline-block; /* インラインブロック要素として表示 (::after擬似要素を有効にするため) */
+}
+.section-heading::after {
+  content: ''; /* 必須 */
+  position: absolute; /* 絶対配置 */
+  left: 0; /* 左端を基準位置に */
+  bottom: -4px; /* 下からの距離 */
+  width: 100%; /* 親要素の幅に合わせる */
+  height: 2px; /* 線の高さ */
+  background-color: #cbd5e0; /* 薄いグレーのアンダーラインの色 */
+  transform: scaleX(0); /* X軸方向に0倍に縮小 (非表示) */
+  transform-origin: left; /* 変形基点を左端に */
+  transition: transform 0.4s ease; /* 変形アニメーション */
+}
+
+.section-heading:hover::after {
+  transform: scaleX(1); /* ホバー時にX軸方向に1倍に拡大 (表示) */
+}
+
+/* ナビゲーションリンク */
+.nav-link {
+  color: #d1d5db; /* text-gray-300 */
+  padding: 0.75rem 1rem; /* 上下0.75rem、左右1remのpadding */
+  border-radius: 0.375rem; /* Tailwindのrounded-md、角丸 */
+  display: flex; /* フレックスボックス */
+  align-items: center; /* 縦方向中央揃え */
+  transition: color 0.3s ease; /* 文字色transition */
+  font-weight: 500; /* フォントウェイト */
+}
+
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* わずかに透明な白の背景色 (ホバー時) */
+    color: #fff; /* ホバー時の文字色を白に */
+}
+
+/* ロゴの立体感 */
+.logo_bg-container {
+    padding: 16px 0 16px; /* 上下にpadding */
+    display: flex; /* フレックスボックス */
+    justify-content: center; /* 水平方向中央揃え */
+    align-items: center; /* 垂直方向中央揃え */
+}
+
+.logo_bg {
+    width: 150px; /* 幅 */
+    height: 150px; /* 高さ */
+    border-radius: 50%; /* 完全な円形 */
+    background: #eef0f3; /* 背景色 */
+    box-shadow: inset 7px 7px 10px #9ca3af, inset -7px -7px 10px #ffffff; /* 内側のシャドウで立体感を出す */
+    display: flex; /* フレックスボックス */
+    align-items: center; /* 縦方向中央揃え */
+    justify-content: center; /* 横方向中央揃え */
+}
+
+.logo {
+    width: 85%; /* 幅 */
+    height: 85%; /* 高さ */
+    border-radius: 50%; /* 完全な円形 */
+    overflow: hidden; /* 画像が円形からはみ出ないように */
+    position: relative; /* logo_bgの中央からの相対位置指定のため */
+}
+
+
+/* フッター */
+footer {
+    background-color: #4a5568; /* フッターの背景色 */
+    color: #d1d5db; /* フッターの文字色 */
+    padding: 1.5rem 0; /* 上下padding */
+    width: 100%; /* 幅100% */
+    position: relative; /* z-indexを効かせるために必要 */
+    z-index: 51; /* サイドバーより前面に表示 */
+}
+
+
+
+/* ---  以下、モバイル表示用のスタイル  --- */
+@media (max-width: 767px) { /* 画面幅が767px以下の場合に適用 */
+    #sidebar {
+        position: relative; /* サイドバーのpositionをrelativeに変更 */
+        width: 100%;      /* サイドバーの幅を100%にする */
+        height: auto;     /* 高さを自動調整 */
+        z-index: 10;      /* コンテンツより手前に表示 */
+        box-shadow: none; /* モバイルでは影を削除 */
+    }
+
+    main {
+        margin-left: 0 !important; /* main要素の左マージンを削除 */
+        padding-top: 20px; /* サイドバーとの間隔を調整 */
+        padding-left: 5%; /* 左右のパディングを調整 */
+        padding-right: 5%;
+    }
+
+    .logo_bg-container {
+        padding: 24px 0 24px; /* ロゴコンテナの縦paddingを調整 */
+    }
+
+    .logo_bg {
+        width: 120px; /* ロゴ背景のサイズを少し小さく */
+        height: 120px;
+        box-shadow: inset 5px 5px 7px #9ca3af, inset -5px -5px 7px #ffffff; /* シャドウも少し弱める */
+    }
+}
