@@ -129,6 +129,8 @@ AITuber等のAIキャラクターに特化した記憶・想起システム。
 
 ### Intern / Part-time
 
+#### Research Intern @ [Turing Inc.](https://tur.ing/)
+
 #### Machine Learning Engineer @ [ReAlice Inc.](https://realice.jp/)
 August 2023 - January 2024
 
@@ -138,13 +140,13 @@ July 2023 - September 2023
 ---
 
 ## Social
-| サービス | アカウント | 備考 |
+| サービス | アカウント |
 |:---|:---|:---|
-| Zenn | [@sudy_super](https://zenn.dev/sudy_super) | 技術記事 |
-| Note | [@sudy_super](https://note.com/sudy_super) | 備忘録 |
-| GitHub | [@sudy-super](https://github.com/sudy-super) | プロジェクト管理 |
-| Huggingface | [@sudy-super](https://huggingface.co/sudy-super) | モデル・データセット管理 |
-| Twitter | [@sudy_super](https://twitter.com/sudy_super) | 日々の発信・交流 |
+| Zenn | [@sudy_super](https://zenn.dev/sudy_super) |
+| Note | [@sudy_super](https://note.com/sudy_super) |
+| GitHub | [@sudy-super](https://github.com/sudy-super) |
+| Huggingface | [@sudy-super](https://huggingface.co/sudy-super) |
+| Twitter | [@sudy_super](https://twitter.com/sudy_super) |
 
 ---
 
