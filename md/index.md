@@ -129,7 +129,11 @@ AITuber等のAIキャラクターに特化した記憶・想起システム。
 
 ### Intern / Part-time
 
+#### Research Intern @ [PKSHA Technology Inc.](https://pkshatech.com)
+September 2025 - Present
+
 #### Research Intern @ [Turing Inc.](https://tur.ing/)
+August 2025 - September 2025
 
 #### Machine Learning Engineer @ [ReAlice Inc.](https://realice.jp/)
 August 2023 - January 2024
